@@ -6,7 +6,7 @@ import Pricing from './components/Pricing';
 
 const App = () => {
     return (
-        <div>
+        <div style={{backgroundColor: '#f1f1f1', minHeight: '100vh'}}>
             <Router>
                 <Switch>
                     <Route exact path="/" component={Landing}></Route>

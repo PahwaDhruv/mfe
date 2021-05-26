@@ -2,9 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 const Landing = () => {
     return (
-        <div>
+        <div className="text-center">
             <h1>Landing Page</h1>
-            <Link to='/pricing' href='/pricing'>Pricing</Link>
+            <Link to='/pricing' href='/pricing' className="btn btn-primary">Pricing</Link>
         </div>
     )
 }

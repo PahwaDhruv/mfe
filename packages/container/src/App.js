@@ -1,10 +1,11 @@
 import React from 'react';
 import MarketingApp from './components/MarketingApp';
+import Header from './components/Header';
 
 const App = () => {
     return (
-        <div>
-            <h1>Hello World!!!</h1><hr />
+        <div className="text-center">
+            <Header />
             <MarketingApp />
         </div>
     )

@@ -1,10 +1,12 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 
 const Header = () => {
     return (
         <nav className="navbar navbar-light bg-light">
-           <div class="container">
-                <a class="navbar-brand" href="#">App</a>
+           <div className="container">
+                {/* <a className="navbar-brand" href="#">App</a> */}
+                <Link href='/' to='/' className="navbar-brand">App</Link>
                 <div className="d-flex">
                     <button className="btn btn-outline-primary">Login</button>
                 </div>

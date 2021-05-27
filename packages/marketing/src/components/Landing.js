@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 const Landing = () => {
     return (
         <div className="container">
-            <h1>Landing Page</h1>
+            <h1>Landing Page Huuray</h1>
             <div className="row">
                 <div className="col-sm-6">
                     <div className="card">
                     <div className="card-body">
                         <h5 className="card-title">Special title treatment</h5>
                         <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <Link to='/pricing' href='/pricing' className="btn btn-primary">See Pricing</Link>
+                        <Link to='/pricing' href='/pricing' className="btn btn-danger">See Pricing</Link>
                     </div>
                     </div>
                 </div>

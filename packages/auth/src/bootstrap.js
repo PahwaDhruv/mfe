@@ -22,17 +22,17 @@ const mountMarketApp = (el, {onNavigate, defaultHistory, initialPath}) => {
     return {
         onParentNavigate: (location) => {
             const {pathname} = history.location;
+            console.log('Parent Navigated', location.pathname)
             if(pathname !== location.pathname){
                 history.push(location.pathname)
             }
-            console.log('Parent Navigated', location)
         }
     }
 }
 
 //Running app in dev mode without container
 if(process.env.NODE_ENV === 'development'){
-    const el = document.querySelector('#_marketing-dev-root');
+    const el = document.querySelector('#_auth-dev-root');
     if(el){
         mountMarketApp(el, {defaultHistory: createBrowserHistory()});
     }

@@ -33,6 +33,7 @@ const Pricing = () => {
                     </div>
                 </div>
             </div>
+            <Link to='/pricing' href='/pricing' className="btn btn-danger">Pricing</Link>
             <Link to='/' href='/' className="btn btn-success">Home</Link>
         </div>
     )

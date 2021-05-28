@@ -19,7 +19,7 @@ const Landing = () => {
                     <div className="card-body">
                         <h5 className="card-title">Be a member</h5>
                         <p className="card-text">Create an account to get access to more cool stuffs</p>
-                        <Link to='/pricing' href='/pricing' className="btn btn-success">Sign Up</Link>
+                        <Link to='/auth/register' href='/auth/register' className="btn btn-success">Sign Up</Link>
                     </div>
                     </div>
                 </div>

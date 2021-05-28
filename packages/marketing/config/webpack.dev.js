@@ -6,11 +6,12 @@ const packageJson = require('../package.json');
 
 const devConfig = {
     mode: 'development',
+    output: {
+        publicPath: 'http://localhost:8081/' //required for directly accessing /mark/pricing
+    },
     devServer: {
         port: 8081,
-        historyApiFallback: {
-            index: 'index.html'
-        }
+        historyApiFallback: true //required for directly accessing /pricing
     },
     devtool: 'source-map',
     plugins: [

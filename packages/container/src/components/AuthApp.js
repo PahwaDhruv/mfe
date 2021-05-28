@@ -1,6 +1,6 @@
 import React,{useRef, useEffect} from 'react'
 import {useHistory} from 'react-router-dom';
-import {mountMarketApp} from 'marketing/MarketingApp';
+import {mountMarketApp} from 'auth/AuthApp';
 
 const MarketingApp = () => {
     const ref = useRef(null);

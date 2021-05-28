@@ -5,7 +5,7 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 //Mount function to start up the app
-const mountMarketApp = (el, {onNavigate, defaultHistory, initialPath}) => {
+const mountMarketApp = (el, {onNavigate, loginAuth, defaultHistory, initialPath}) => {
     
     const history = defaultHistory || createMemoryHistory({
         initialEntries: [initialPath]
@@ -15,7 +15,7 @@ const mountMarketApp = (el, {onNavigate, defaultHistory, initialPath}) => {
     }
    
     ReactDOM.render(
-        <App history={history}/>,
+        <App authLogin = {loginAuth} history={history}/>,
         el
     )
 

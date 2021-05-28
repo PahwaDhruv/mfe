@@ -2,7 +2,7 @@ import React,{useRef, useEffect} from 'react'
 import {useHistory} from 'react-router-dom';
 import {mountMarketApp} from 'auth/AuthApp';
 
-const MarketingApp = () => {
+const MarketingApp = ({loginAuth}) => {
     const ref = useRef(null);
     const history = useHistory();
 
@@ -15,7 +15,8 @@ const MarketingApp = () => {
                 if(pathname !== location.pathname){
                     history.push(location.pathname);
                 }
-            }
+            },
+            loginAuth
         });
         history.listen(onParentNavigate);
     }, [])

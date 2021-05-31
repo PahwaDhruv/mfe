@@ -5,7 +5,7 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 //Mount function to start up the app
-const mountMarketApp = (el, {onNavigate, loginAuth, defaultHistory, initialPath}) => {
+const mountAuthApp = (el, {onNavigate, loginAuth, defaultHistory, initialPath}) => {
     
     const history = defaultHistory || createMemoryHistory({
         initialEntries: [initialPath]
@@ -34,9 +34,9 @@ const mountMarketApp = (el, {onNavigate, loginAuth, defaultHistory, initialPath}
 if(process.env.NODE_ENV === 'development'){
     const el = document.querySelector('#_auth-dev-root');
     if(el){
-        mountMarketApp(el, {defaultHistory: createBrowserHistory()});
+        mountAuthApp(el, {defaultHistory: createBrowserHistory()});
     }
 }
 
 //Running app using container
-export {mountMarketApp};
+export {mountAuthApp};
